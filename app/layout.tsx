@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "UPES Project Collab",
+  title: "Sap Connect",
   description: "Find project collaborators with diverse skills",
     generator: 'v0.dev'
 }

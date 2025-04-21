@@ -12,6 +12,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle, Users, LogIn } from "lucide-react"
 import { loginUser } from "@/lib/auth"
+import { connectDB } from "@/config/db";
 
 export default function LoginPage() {
   const router = useRouter()
@@ -19,6 +20,8 @@ export default function LoginPage() {
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  // /app/login/page.tsx or API route
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
